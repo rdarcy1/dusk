@@ -79,7 +79,10 @@ class ChromeProcess
             return [];
         }
 
-        return ['DISPLAY' => $_ENV['DISPLAY'] ?? ':0'];
+         return [
+            'DISPLAY' => $_ENV['DISPLAY'] ?? ':0',
+            'NO-SANDBOX' => true,
+        ];
     }
 
     /**
