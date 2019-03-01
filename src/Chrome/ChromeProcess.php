@@ -81,7 +81,7 @@ class ChromeProcess
 
          return [
             'DISPLAY' => $_ENV['DISPLAY'] ?? ':0',
-            'NO-SANDBOX' => true,
+            'NO_SANDBOX' => true,
         ];
     }
 
